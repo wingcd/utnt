@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FAC05040-81AA-4448-A0EC-25CAB3B67D14}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>HttpServer</RootNamespace>
+    <AssemblyName>HttpServer</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <UseMSBuildEngine>false</UseMSBuildEngine>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\..\Applications\Unity\Unity.app\Contents\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="src\ArrayParameterCollection.cs" />
+    <Compile Include="src\AuthenticationRequiredException.cs" />
+    <Compile Include="src\BadRequestException.cs" />
+    <Compile Include="src\ComponentAttribute.cs" />
+    <Compile Include="src\ContentTypeHelper.cs" />
+    <Compile Include="src\ErrorPageEventArgs.cs" />
+    <Compile Include="src\ExceptionEventArgs.cs" />
+    <Compile Include="src\ForbiddenException.cs" />
+    <Compile Include="src\HttpContext.cs" />
+    <Compile Include="src\HttpException.cs" />
+    <Compile Include="src\HttpFactory.cs" />
+    <Compile Include="src\HttpFile.cs" />
+    <Compile Include="src\HttpFileCollection.cs" />
+    <Compile Include="src\HttpListener.cs" />
+    <Compile Include="src\IHttpContext.cs" />
+    <Compile Include="src\IHttpFactory.cs" />
+    <Compile Include="src\IHttpListener.cs" />
+    <Compile Include="src\IMessage.cs" />
+    <Compile Include="src\IParameterCollection.cs" />
+    <Compile Include="src\IRequest.cs" />
+    <Compile Include="src\IResponse.cs" />
+    <Compile Include="src\IServiceResolver.cs" />
+    <Compile Include="src\InternalServerException.cs" />
+    <Compile Include="src\Method.cs" />
+    <Compile Include="src\NotFoundException.cs" />
+    <Compile Include="src\ParameterCollection.cs" />
+    <Compile Include="src\ProcessingResult.cs" />
+    <Compile Include="src\RequestContext.cs" />
+    <Compile Include="src\RequestEventArgs.cs" />
+    <Compile Include="src\SecureHttpContext.cs" />
+    <Compile Include="src\SecureHttpListener.cs" />
+    <Compile Include="src\Server.cs" />
+    <Compile Include="src\SimpleServer.cs" />
+    <Compile Include="src\SocketFilterEventArgs.cs" />
+    <Compile Include="src\Authentication\AuthenticationProvider.cs" />
+    <Compile Include="src\Authentication\BasicAuthentication.cs" />
+    <Compile Include="src\Authentication\DigestAuthentication.cs" />
+    <Compile Include="src\Authentication\IAuthenticationProvider.cs" />
+    <Compile Include="src\Authentication\IAuthenticator.cs" />
+    <Compile Include="src\Authentication\IUserProvider.cs" />
+    <Compile Include="src\BodyDecoders\BodyDecoderCollection.cs" />
+    <Compile Include="src\BodyDecoders\DecodedData.cs" />
+    <Compile Include="src\BodyDecoders\IBodyDecoder.cs" />
+    <Compile Include="src\BodyDecoders\MultiPartDecoder.cs" />
+    <Compile Include="src\BodyDecoders\UrlDecoder.cs" />
+    <Compile Include="src\BodyDecoders\Mono\HttpMultiPart.cs" />
+    <Compile Include="src\BodyDecoders\Mono\StrUtils.cs" />
+    <Compile Include="src\Headers\AuthorizationHeader.cs" />
+    <Compile Include="src\Headers\CacheControl.cs" />
+    <Compile Include="src\Headers\ConnectionHeader.cs" />
+    <Compile Include="src\Headers\ContentTypeHeader.cs" />
+    <Compile Include="src\Headers\CookieHeader.cs" />
+    <Compile Include="src\Headers\DateHeader.cs" />
+    <Compile Include="src\Headers\HeaderCollection.cs" />
+    <Compile Include="src\Headers\HeaderFactory.cs" />
+    <Compile Include="src\Headers\HeaderParameterCollection.cs" />
+    <Compile Include="src\Headers\IHeader.cs" />
+    <Compile Include="src\Headers\IHeaderCollection.cs" />
+    <Compile Include="src\Headers\NumericHeader.cs" />
+    <Compile Include="src\Headers\StringHeader.cs" />
+    <Compile Include="src\Headers\Parsers\AuthorizationParser.cs" />
+    <Compile Include="src\Headers\Parsers\ConnectionParser.cs" />
+    <Compile Include="src\Headers\Parsers\ContentTypeParser.cs" />
+    <Compile Include="src\Headers\Parsers\CookieParser.cs" />
+    <Compile Include="src\Headers\Parsers\DateParser.cs" />
+    <Compile Include="src\Headers\Parsers\IHeaderParser.cs" />
+    <Compile Include="src\Headers\Parsers\NumericHeaderParser.cs" />
+    <Compile Include="src\Headers\Parsers\ParserForAttribute.cs" />
+    <Compile Include="src\Headers\Parsers\StringParser.cs" />
+    <Compile Include="src\Helpers\PropertyAssigner.cs" />
+    <Compile Include="src\Logging\ConsoleLogFactory.cs" />
+    <Compile Include="src\Logging\ConsoleLogger.cs" />
+    <Compile Include="src\Logging\ILogFactory.cs" />
+    <Compile Include="src\Logging\ILogFilter.cs" />
+    <Compile Include="src\Logging\ILogger.cs" />
+    <Compile Include="src\Logging\LogFactory.cs" />
+    <Compile Include="src\Logging\LogFilter.cs" />
+    <Compile Include="src\Logging\LogLevel.cs" />
+    <Compile Include="src\Logging\NullLogFactory.cs" />
+    <Compile Include="src\Logging\NullLogWriter.cs" />
+    <Compile Include="src\Messages\FactoryRequestEventArgs.cs" />
+    <Compile Include="src\Messages\MessageFactory.cs" />
+    <Compile Include="src\Messages\MessageFactoryContext.cs" />
+    <Compile Include="src\Messages\Request.cs" />
+    <Compile Include="src\Messages\RequestCookie.cs" />
+    <Compile Include="src\Messages\RequestCookiesCollection.cs" />
+    <Compile Include="src\Messages\Response.cs" />
+    <Compile Include="src\Messages\ResponseCookie.cs" />
+    <Compile Include="src\Messages\ResponseCookieCollection.cs" />
+    <Compile Include="src\Messages\ResponseWriter.cs" />
+    <Compile Include="src\Messages\Parser\BodyEventArgs.cs" />
+    <Compile Include="src\Messages\Parser\FactoryResponseEventArgs.cs" />
+    <Compile Include="src\Messages\Parser\HeaderEventArgs.cs" />
+    <Compile Include="src\Messages\Parser\HttpParser.cs" />
+    <Compile Include="src\Messages\Parser\ParserException.cs" />
+    <Compile Include="src\Messages\Parser\RequestEventArgs.cs" />
+    <Compile Include="src\Messages\Parser\RequestLineEventArgs.cs" />
+    <Compile Include="src\Messages\Parser\ResponseLineEventArgs.cs" />
+    <Compile Include="src\Modules\FileModule.cs" />
+    <Compile Include="src\Modules\IModule.cs" />
+    <Compile Include="src\Resources\EmbeddedResourceLoader.cs" />
+    <Compile Include="src\Resources\FileResources.cs" />
+    <Compile Include="src\Resources\IResourceLoader.cs" />
+    <Compile Include="src\Resources\IResourceProvider.cs" />
+    <Compile Include="src\Resources\Resource.cs" />
+    <Compile Include="src\Resources\ResourceProvider.cs" />
+    <Compile Include="src\Routing\IRouter.cs" />
+    <Compile Include="src\Routing\RegExRouter.cs" />
+    <Compile Include="src\Routing\SimpleRouter.cs" />
+    <Compile Include="src\Sessions\ISessionProvider.cs" />
+    <Compile Include="src\Sessions\ISessionStore.cs" />
+    <Compile Include="src\Sessions\Session.cs" />
+    <Compile Include="src\Sessions\SessionFileStore.cs" />
+    <Compile Include="src\Sessions\SessionProvider.cs" />
+    <Compile Include="src\Tools\BufferReader.cs" />
+    <Compile Include="src\Tools\HttpUtility.cs" />
+    <Compile Include="src\Tools\ITextReader.cs" />
+    <Compile Include="src\Tools\ObjectPool.cs" />
+    <Compile Include="src\Tools\Session.cs" />
+    <Compile Include="src\Tools\SessionProvider.cs" />
+    <Compile Include="src\Tools\StringReader.cs" />
+    <Compile Include="src\Tools\UrlParser.cs" />
+    <Compile Include="src\Tools\Properties\CachedProperty.cs" />
+    <Compile Include="src\Tools\Properties\EmitHelper.cs" />
+    <Compile Include="src\Tools\Properties\EmitReflector.cs" />
+    <Compile Include="src\Tools\Properties\PropertyProvider.cs" />
+    <Compile Include="src\Transports\ClientCertificate.cs" />
+    <Compile Include="src\Transports\ResusableNetworkStream.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\HttpServer.csproj" />
+    <None Include="src\app.config" />
+    <None Include="src\httpserver.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

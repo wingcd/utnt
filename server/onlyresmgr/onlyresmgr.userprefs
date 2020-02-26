@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{486BB306-7EF0-A24C-F810-742D33D5E7F5}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/UTNT/Samples/Scripts/only_resmgr.cs">
+    <Files>
+      <File FileName="Assets/UTNT/Samples/Scripts/only_resmgr.cs" Line="13" Column="46" />
+      <File FileName="../../../../../Work/robotc-server/src/wejust/classmgr/conf/app.cfg" Line="2" Column="7" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="onlyresmgr" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="UTNT" expanded="True">
+                <Node name="Samples" expanded="True">
+                  <Node name="Scripts" expanded="True">
+                    <Node name="only_resmgr.cs" selected="True" />
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.onlyresmgr PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

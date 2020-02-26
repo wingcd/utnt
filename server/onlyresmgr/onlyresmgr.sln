@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio for Mac
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "onlyresmgr", "onlyresmgr.csproj", "{486BB306-7EF0-A24C-F810-742D33D5E7F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "onlyresmgr.Editor", "onlyresmgr.Editor.csproj", "{6EA0E9A1-7DED-C790-6DD0-EA0D014FAC17}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{486BB306-7EF0-A24C-F810-742D33D5E7F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{486BB306-7EF0-A24C-F810-742D33D5E7F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{486BB306-7EF0-A24C-F810-742D33D5E7F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{486BB306-7EF0-A24C-F810-742D33D5E7F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EA0E9A1-7DED-C790-6DD0-EA0D014FAC17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EA0E9A1-7DED-C790-6DD0-EA0D014FAC17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EA0E9A1-7DED-C790-6DD0-EA0D014FAC17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EA0E9A1-7DED-C790-6DD0-EA0D014FAC17}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4E82D8C7-610D-4FC3-B82B-1C82F99C3767}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>UTNT</RootNamespace>
+    <AssemblyName>UTNT</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <UseMSBuildEngine>false</UseMSBuildEngine>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;NET_2_0;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <DefineConstants>NET_2_0;DISABLE_TERMINAL;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\..\..\Assets\EasyFileManager\Plugin\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="UnityEngine">
+      <HintPath>dlls\UnityEngine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="HttpServer\Utils.cs" />
+    <Compile Include="UTNT\ArgsParser\Argument.cs" />
+    <Compile Include="UTNT\ArgsParser\ArgumentParser.cs" />
+    <Compile Include="UTNT\HttpServer\HandleRouter.cs" />
+    <Compile Include="UTNT\HttpServer\Model.cs" />
+    <Compile Include="UTNT\HttpServer\UintyStreamAssetsLoader.cs" />
+    <Compile Include="UTNT\HttpServer\WebServer.cs" />
+    <Compile Include="UTNT\Terminal\HelpWorker.cs" />
+    <Compile Include="UTNT\Terminal\ManWorker.cs" />
+    <Compile Include="UTNT\Terminal\PlayerPrefsWorker.cs" />
+    <Compile Include="UTNT\Terminal\UTerminal.cs" />
+    <Compile Include="UTNT\Utils\CoroutineProvide.cs" />
+    <Compile Include="UTNT\Utils\Loom.cs" />
+    <Compile Include="UTNT\Utils\ResLoader.cs" />
+    <Compile Include="UTNT\Utils\UtilsHelper.cs" />
+    <Compile Include="UTNT\Utils\Zipper.cs" />
+    <Compile Include="UTNT\HttpServer\LogFactory.cs" />
+    <Compile Include="WebSocket\AssemblyInfo.cs" />
+    <Compile Include="WebSocket\ByteOrder.cs" />
+    <Compile Include="WebSocket\CloseEventArgs.cs" />
+    <Compile Include="WebSocket\CloseStatusCode.cs" />
+    <Compile Include="WebSocket\CompressionMethod.cs" />
+    <Compile Include="WebSocket\ErrorEventArgs.cs" />
+    <Compile Include="WebSocket\Ext.cs" />
+    <Compile Include="WebSocket\Fin.cs" />
+    <Compile Include="WebSocket\HttpBase.cs" />
+    <Compile Include="WebSocket\HttpRequest.cs" />
+    <Compile Include="WebSocket\HttpResponse.cs" />
+    <Compile Include="WebSocket\LogData.cs" />
+    <Compile Include="WebSocket\LogLevel.cs" />
+    <Compile Include="WebSocket\Logger.cs" />
+    <Compile Include="WebSocket\Mask.cs" />
+    <Compile Include="WebSocket\MessageEventArgs.cs" />
+    <Compile Include="WebSocket\Opcode.cs" />
+    <Compile Include="WebSocket\PayloadData.cs" />
+    <Compile Include="WebSocket\Rsv.cs" />
+    <Compile Include="WebSocket\Utils.cs" />
+    <Compile Include="WebSocket\WebSocket.cs" />
+    <Compile Include="WebSocket\WebSocketException.cs" />
+    <Compile Include="WebSocket\WebSocketFrame.cs" />
+    <Compile Include="WebSocket\WebSocketState.cs" />
+    <Compile Include="WebSocket\Net\AuthenticationBase.cs" />
+    <Compile Include="WebSocket\Net\AuthenticationChallenge.cs" />
+    <Compile Include="WebSocket\Net\AuthenticationResponse.cs" />
+    <Compile Include="WebSocket\Net\AuthenticationSchemes.cs" />
+    <Compile Include="WebSocket\Net\Chunk.cs" />
+    <Compile Include="WebSocket\Net\ChunkStream.cs" />
+    <Compile Include="WebSocket\Net\ChunkedRequestStream.cs" />
+    <Compile Include="WebSocket\Net\ClientSslConfiguration.cs" />
+    <Compile Include="WebSocket\Net\Cookie.cs" />
+    <Compile Include="WebSocket\Net\CookieCollection.cs" />
+    <Compile Include="WebSocket\Net\CookieException.cs" />
+    <Compile Include="WebSocket\Net\EndPointListener.cs" />
+    <Compile Include="WebSocket\Net\EndPointManager.cs" />
+    <Compile Include="WebSocket\Net\HttpBasicIdentity.cs" />
+    <Compile Include="WebSocket\Net\HttpConnection.cs" />
+    <Compile Include="WebSocket\Net\HttpDigestIdentity.cs" />
+    <Compile Include="WebSocket\Net\HttpHeaderInfo.cs" />
+    <Compile Include="WebSocket\Net\HttpHeaderType.cs" />
+    <Compile Include="WebSocket\Net\HttpListener.cs" />
+    <Compile Include="WebSocket\Net\HttpListenerAsyncResult.cs" />
+    <Compile Include="WebSocket\Net\HttpListenerContext.cs" />
+    <Compile Include="WebSocket\Net\HttpListenerException.cs" />
+    <Compile Include="WebSocket\Net\HttpListenerPrefix.cs" />
+    <Compile Include="WebSocket\Net\HttpListenerPrefixCollection.cs" />
+    <Compile Include="WebSocket\Net\HttpListenerRequest.cs" />
+    <Compile Include="WebSocket\Net\HttpListenerResponse.cs" />
+    <Compile Include="WebSocket\Net\HttpRequestHeader.cs" />
+    <Compile Include="WebSocket\Net\HttpResponseHeader.cs" />
+    <Compile Include="WebSocket\Net\HttpStatusCode.cs" />
+    <Compile Include="WebSocket\Net\HttpStreamAsyncResult.cs" />
+    <Compile Include="WebSocket\Net\HttpUtility.cs" />
+    <Compile Include="WebSocket\Net\HttpVersion.cs" />
+    <Compile Include="WebSocket\Net\InputChunkState.cs" />
+    <Compile Include="WebSocket\Net\InputState.cs" />
+    <Compile Include="WebSocket\Net\LineState.cs" />
+    <Compile Include="WebSocket\Net\NetworkCredential.cs" />
+    <Compile Include="WebSocket\Net\QueryStringCollection.cs" />
+    <Compile Include="WebSocket\Net\ReadBufferState.cs" />
+    <Compile Include="WebSocket\Net\RequestStream.cs" />
+    <Compile Include="WebSocket\Net\ResponseStream.cs" />
+    <Compile Include="WebSocket\Net\ServerSslConfiguration.cs" />
+    <Compile Include="WebSocket\Net\WebHeaderCollection.cs" />
+    <Compile Include="WebSocket\Net\WebSockets\HttpListenerWebSocketContext.cs" />
+    <Compile Include="WebSocket\Net\WebSockets\TcpListenerWebSocketContext.cs" />
+    <Compile Include="WebSocket\Net\WebSockets\WebSocketContext.cs" />
+    <Compile Include="WebSocket\Server\HttpRequestEventArgs.cs" />
+    <Compile Include="WebSocket\Server\HttpServer.cs" />
+    <Compile Include="WebSocket\Server\IWebSocketSession.cs" />
+    <Compile Include="WebSocket\Server\ServerState.cs" />
+    <Compile Include="WebSocket\Server\WebSocketBehavior.cs" />
+    <Compile Include="WebSocket\Server\WebSocketServer.cs" />
+    <Compile Include="WebSocket\Server\WebSocketServiceHost.cs" />
+    <Compile Include="WebSocket\Server\WebSocketServiceHost`1.cs" />
+    <Compile Include="WebSocket\Server\WebSocketServiceManager.cs" />
+    <Compile Include="WebSocket\Server\WebSocketSessionManager.cs" />
+    <Compile Include="HttpServer\ArrayParameterCollection.cs" />
+    <Compile Include="HttpServer\AuthenticationRequiredException.cs" />
+    <Compile Include="HttpServer\BadRequestException.cs" />
+    <Compile Include="HttpServer\ComponentAttribute.cs" />
+    <Compile Include="HttpServer\ContentTypeHelper.cs" />
+    <Compile Include="HttpServer\ErrorPageEventArgs.cs" />
+    <Compile Include="HttpServer\ExceptionEventArgs.cs" />
+    <Compile Include="HttpServer\ForbiddenException.cs" />
+    <Compile Include="HttpServer\HttpContext.cs" />
+    <Compile Include="HttpServer\HttpException.cs" />
+    <Compile Include="HttpServer\HttpFactory.cs" />
+    <Compile Include="HttpServer\HttpFile.cs" />
+    <Compile Include="HttpServer\HttpFileCollection.cs" />
+    <Compile Include="HttpServer\HttpListener.cs" />
+    <Compile Include="HttpServer\IHttpContext.cs" />
+    <Compile Include="HttpServer\IHttpFactory.cs" />
+    <Compile Include="HttpServer\IHttpListener.cs" />
+    <Compile Include="HttpServer\IMessage.cs" />
+    <Compile Include="HttpServer\IParameterCollection.cs" />
+    <Compile Include="HttpServer\IRequest.cs" />
+    <Compile Include="HttpServer\IResponse.cs" />
+    <Compile Include="HttpServer\IServiceResolver.cs" />
+    <Compile Include="HttpServer\InternalServerException.cs" />
+    <Compile Include="HttpServer\Method.cs" />
+    <Compile Include="HttpServer\NotFoundException.cs" />
+    <Compile Include="HttpServer\ParameterCollection.cs" />
+    <Compile Include="HttpServer\ProcessingResult.cs" />
+    <Compile Include="HttpServer\RequestContext.cs" />
+    <Compile Include="HttpServer\RequestEventArgs.cs" />
+    <Compile Include="HttpServer\SecureHttpContext.cs" />
+    <Compile Include="HttpServer\SecureHttpListener.cs" />
+    <Compile Include="HttpServer\Server.cs" />
+    <Compile Include="HttpServer\SimpleServer.cs" />
+    <Compile Include="HttpServer\SocketFilterEventArgs.cs" />
+    <Compile Include="HttpServer\Authentication\AuthenticationProvider.cs" />
+    <Compile Include="HttpServer\Authentication\BasicAuthentication.cs" />
+    <Compile Include="HttpServer\Authentication\DigestAuthentication.cs" />
+    <Compile Include="HttpServer\Authentication\IAuthenticationProvider.cs" />
+    <Compile Include="HttpServer\Authentication\IAuthenticator.cs" />
+    <Compile Include="HttpServer\Authentication\IUserProvider.cs" />
+    <Compile Include="HttpServer\BodyDecoders\BodyDecoderCollection.cs" />
+    <Compile Include="HttpServer\BodyDecoders\DecodedData.cs" />
+    <Compile Include="HttpServer\BodyDecoders\IBodyDecoder.cs" />
+    <Compile Include="HttpServer\BodyDecoders\MultiPartDecoder.cs" />
+    <Compile Include="HttpServer\BodyDecoders\UrlDecoder.cs" />
+    <Compile Include="HttpServer\BodyDecoders\Mono\HttpMultiPart.cs" />
+    <Compile Include="HttpServer\BodyDecoders\Mono\StrUtils.cs" />
+    <Compile Include="HttpServer\Headers\AuthorizationHeader.cs" />
+    <Compile Include="HttpServer\Headers\CacheControl.cs" />
+    <Compile Include="HttpServer\Headers\ConnectionHeader.cs" />
+    <Compile Include="HttpServer\Headers\ContentTypeHeader.cs" />
+    <Compile Include="HttpServer\Headers\CookieHeader.cs" />
+    <Compile Include="HttpServer\Headers\DateHeader.cs" />
+    <Compile Include="HttpServer\Headers\HeaderCollection.cs" />
+    <Compile Include="HttpServer\Headers\HeaderFactory.cs" />
+    <Compile Include="HttpServer\Headers\HeaderParameterCollection.cs" />
+    <Compile Include="HttpServer\Headers\IHeader.cs" />
+    <Compile Include="HttpServer\Headers\IHeaderCollection.cs" />
+    <Compile Include="HttpServer\Headers\NumericHeader.cs" />
+    <Compile Include="HttpServer\Headers\StringHeader.cs" />
+    <Compile Include="HttpServer\Headers\Parsers\AuthorizationParser.cs" />
+    <Compile Include="HttpServer\Headers\Parsers\ConnectionParser.cs" />
+    <Compile Include="HttpServer\Headers\Parsers\ContentTypeParser.cs" />
+    <Compile Include="HttpServer\Headers\Parsers\CookieParser.cs" />
+    <Compile Include="HttpServer\Headers\Parsers\DateParser.cs" />
+    <Compile Include="HttpServer\Headers\Parsers\IHeaderParser.cs" />
+    <Compile Include="HttpServer\Headers\Parsers\NumericHeaderParser.cs" />
+    <Compile Include="HttpServer\Headers\Parsers\ParserForAttribute.cs" />
+    <Compile Include="HttpServer\Headers\Parsers\StringParser.cs" />
+    <Compile Include="HttpServer\Helpers\PropertyAssigner.cs" />
+    <Compile Include="HttpServer\Logging\ConsoleLogFactory.cs" />
+    <Compile Include="HttpServer\Logging\ConsoleLogger.cs" />
+    <Compile Include="HttpServer\Logging\ILogFactory.cs" />
+    <Compile Include="HttpServer\Logging\ILogFilter.cs" />
+    <Compile Include="HttpServer\Logging\ILogger.cs" />
+    <Compile Include="HttpServer\Logging\LogFactory.cs" />
+    <Compile Include="HttpServer\Logging\LogFilter.cs" />
+    <Compile Include="HttpServer\Logging\LogLevel.cs" />
+    <Compile Include="HttpServer\Logging\NullLogFactory.cs" />
+    <Compile Include="HttpServer\Logging\NullLogWriter.cs" />
+    <Compile Include="HttpServer\Messages\FactoryRequestEventArgs.cs" />
+    <Compile Include="HttpServer\Messages\MessageFactory.cs" />
+    <Compile Include="HttpServer\Messages\MessageFactoryContext.cs" />
+    <Compile Include="HttpServer\Messages\Request.cs" />
+    <Compile Include="HttpServer\Messages\RequestCookie.cs" />
+    <Compile Include="HttpServer\Messages\RequestCookiesCollection.cs" />
+    <Compile Include="HttpServer\Messages\Response.cs" />
+    <Compile Include="HttpServer\Messages\ResponseCookie.cs" />
+    <Compile Include="HttpServer\Messages\ResponseCookieCollection.cs" />
+    <Compile Include="HttpServer\Messages\ResponseWriter.cs" />
+    <Compile Include="HttpServer\Messages\Parser\BodyEventArgs.cs" />
+    <Compile Include="HttpServer\Messages\Parser\FactoryResponseEventArgs.cs" />
+    <Compile Include="HttpServer\Messages\Parser\HeaderEventArgs.cs" />
+    <Compile Include="HttpServer\Messages\Parser\HttpParser.cs" />
+    <Compile Include="HttpServer\Messages\Parser\ParserException.cs" />
+    <Compile Include="HttpServer\Messages\Parser\RequestEventArgs.cs" />
+    <Compile Include="HttpServer\Messages\Parser\RequestLineEventArgs.cs" />
+    <Compile Include="HttpServer\Messages\Parser\ResponseLineEventArgs.cs" />
+    <Compile Include="HttpServer\Modules\FileModule.cs" />
+    <Compile Include="HttpServer\Modules\IModule.cs" />
+    <Compile Include="HttpServer\Resources\EmbeddedResourceLoader.cs" />
+    <Compile Include="HttpServer\Resources\FileResources.cs" />
+    <Compile Include="HttpServer\Resources\IResourceLoader.cs" />
+    <Compile Include="HttpServer\Resources\IResourceProvider.cs" />
+    <Compile Include="HttpServer\Resources\Resource.cs" />
+    <Compile Include="HttpServer\Resources\ResourceProvider.cs" />
+    <Compile Include="HttpServer\Routing\IRouter.cs" />
+    <Compile Include="HttpServer\Routing\RegExRouter.cs" />
+    <Compile Include="HttpServer\Routing\SimpleRouter.cs" />
+    <Compile Include="HttpServer\Sessions\ISessionProvider.cs" />
+    <Compile Include="HttpServer\Sessions\ISessionStore.cs" />
+    <Compile Include="HttpServer\Sessions\Session.cs" />
+    <Compile Include="HttpServer\Sessions\SessionFileStore.cs" />
+    <Compile Include="HttpServer\Sessions\SessionProvider.cs" />
+    <Compile Include="HttpServer\Tools\BufferReader.cs" />
+    <Compile Include="HttpServer\Tools\HttpUtility.cs" />
+    <Compile Include="HttpServer\Tools\ITextReader.cs" />
+    <Compile Include="HttpServer\Tools\ObjectPool.cs" />
+    <Compile Include="HttpServer\Tools\Session.cs" />
+    <Compile Include="HttpServer\Tools\SessionProvider.cs" />
+    <Compile Include="HttpServer\Tools\StringReader.cs" />
+    <Compile Include="HttpServer\Tools\UrlParser.cs" />
+    <Compile Include="HttpServer\Tools\Properties\CachedProperty.cs" />
+    <Compile Include="HttpServer\Tools\Properties\EmitHelper.cs" />
+    <Compile Include="HttpServer\Tools\Properties\EmitReflector.cs" />
+    <Compile Include="HttpServer\Tools\Properties\PropertyProvider.cs" />
+    <Compile Include="HttpServer\Transports\ClientCertificate.cs" />
+    <Compile Include="HttpServer\Transports\ResusableNetworkStream.cs" />
+    <Compile Include="UTNT\Utils\Broadcast.cs" />
+    <Compile Include="UTNT\Terminal\Connect.cs" />
+    <Compile Include="UTNT\HttpServer\WWWCache.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="WebSocket\websocket-sharp.csproj" />
+    <None Include="WebSocket\websocket-sharp.snk" />
+    <None Include="WebSocket\doc\.gitignore" />
+    <None Include="WebSocket\doc\doc.sh" />
+    <None Include="HttpServer\HttpServer.csproj" />
+    <None Include="HttpServer\app.config" />
+    <None Include="HttpServer\httpserver.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

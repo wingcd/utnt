@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BF3AFEC3-C384-4D1A-87DF-36DE66EB4BD2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>websocketsharp</RootNamespace>
+    <AssemblyName>websocket-sharp</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <UseMSBuildEngine>false</UseMSBuildEngine>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="src\AssemblyInfo.cs" />
+    <Compile Include="src\ByteOrder.cs" />
+    <Compile Include="src\CloseEventArgs.cs" />
+    <Compile Include="src\CloseStatusCode.cs" />
+    <Compile Include="src\CompressionMethod.cs" />
+    <Compile Include="src\ErrorEventArgs.cs" />
+    <Compile Include="src\Ext.cs" />
+    <Compile Include="src\Fin.cs" />
+    <Compile Include="src\HttpBase.cs" />
+    <Compile Include="src\HttpRequest.cs" />
+    <Compile Include="src\HttpResponse.cs" />
+    <Compile Include="src\LogData.cs" />
+    <Compile Include="src\LogLevel.cs" />
+    <Compile Include="src\Logger.cs" />
+    <Compile Include="src\Mask.cs" />
+    <Compile Include="src\MessageEventArgs.cs" />
+    <Compile Include="src\Opcode.cs" />
+    <Compile Include="src\PayloadData.cs" />
+    <Compile Include="src\Rsv.cs" />
+    <Compile Include="src\WebSocket.cs" />
+    <Compile Include="src\WebSocketException.cs" />
+    <Compile Include="src\WebSocketFrame.cs" />
+    <Compile Include="src\WebSocketState.cs" />
+    <Compile Include="src\Net\AuthenticationBase.cs" />
+    <Compile Include="src\Net\AuthenticationChallenge.cs" />
+    <Compile Include="src\Net\AuthenticationResponse.cs" />
+    <Compile Include="src\Net\AuthenticationSchemes.cs" />
+    <Compile Include="src\Net\Chunk.cs" />
+    <Compile Include="src\Net\ChunkStream.cs" />
+    <Compile Include="src\Net\ChunkedRequestStream.cs" />
+    <Compile Include="src\Net\ClientSslConfiguration.cs" />
+    <Compile Include="src\Net\Cookie.cs" />
+    <Compile Include="src\Net\CookieCollection.cs" />
+    <Compile Include="src\Net\CookieException.cs" />
+    <Compile Include="src\Net\EndPointListener.cs" />
+    <Compile Include="src\Net\EndPointManager.cs" />
+    <Compile Include="src\Net\HttpBasicIdentity.cs" />
+    <Compile Include="src\Net\HttpConnection.cs" />
+    <Compile Include="src\Net\HttpDigestIdentity.cs" />
+    <Compile Include="src\Net\HttpHeaderInfo.cs" />
+    <Compile Include="src\Net\HttpHeaderType.cs" />
+    <Compile Include="src\Net\HttpListener.cs" />
+    <Compile Include="src\Net\HttpListenerAsyncResult.cs" />
+    <Compile Include="src\Net\HttpListenerContext.cs" />
+    <Compile Include="src\Net\HttpListenerException.cs" />
+    <Compile Include="src\Net\HttpListenerPrefix.cs" />
+    <Compile Include="src\Net\HttpListenerPrefixCollection.cs" />
+    <Compile Include="src\Net\HttpListenerRequest.cs" />
+    <Compile Include="src\Net\HttpListenerResponse.cs" />
+    <Compile Include="src\Net\HttpRequestHeader.cs" />
+    <Compile Include="src\Net\HttpResponseHeader.cs" />
+    <Compile Include="src\Net\HttpStatusCode.cs" />
+    <Compile Include="src\Net\HttpStreamAsyncResult.cs" />
+    <Compile Include="src\Net\HttpUtility.cs" />
+    <Compile Include="src\Net\HttpVersion.cs" />
+    <Compile Include="src\Net\InputChunkState.cs" />
+    <Compile Include="src\Net\InputState.cs" />
+    <Compile Include="src\Net\LineState.cs" />
+    <Compile Include="src\Net\NetworkCredential.cs" />
+    <Compile Include="src\Net\QueryStringCollection.cs" />
+    <Compile Include="src\Net\ReadBufferState.cs" />
+    <Compile Include="src\Net\RequestStream.cs" />
+    <Compile Include="src\Net\ResponseStream.cs" />
+    <Compile Include="src\Net\ServerSslConfiguration.cs" />
+    <Compile Include="src\Net\WebHeaderCollection.cs" />
+    <Compile Include="src\Net\WebSockets\HttpListenerWebSocketContext.cs" />
+    <Compile Include="src\Net\WebSockets\TcpListenerWebSocketContext.cs" />
+    <Compile Include="src\Net\WebSockets\WebSocketContext.cs" />
+    <Compile Include="src\Server\HttpRequestEventArgs.cs" />
+    <Compile Include="src\Server\HttpServer.cs" />
+    <Compile Include="src\Server\IWebSocketSession.cs" />
+    <Compile Include="src\Server\ServerState.cs" />
+    <Compile Include="src\Server\WebSocketBehavior.cs" />
+    <Compile Include="src\Server\WebSocketServer.cs" />
+    <Compile Include="src\Server\WebSocketServiceHost.cs" />
+    <Compile Include="src\Server\WebSocketServiceHost`1.cs" />
+    <Compile Include="src\Server\WebSocketServiceManager.cs" />
+    <Compile Include="src\Server\WebSocketSessionManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\websocket-sharp.csproj" />
+    <None Include="src\websocket-sharp.snk" />
+    <None Include="src\doc\.gitignore" />
+    <None Include="src\doc\doc.sh" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

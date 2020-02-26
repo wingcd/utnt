@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE dotfuscator SYSTEM "http://www.preemptive.com/dotfuscator/dtd/dotfuscator_v2.1.dtd">
+<dotfuscator version="2.1">
+  <!--This is application generated code. Do not edit manually.-->
+  <propertylist>
+    <property name="ILDASM_v2.0.50727" value="C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Bin\ildasm.exe" />
+    <property name="ILDASM_v4.0.30319" value="C:\Program Files (x86)\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\ildasm.exe" />
+  </propertylist>
+  <global />
+  <input>
+    <asmlist>
+      <inputassembly>
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <option>library</option>
+        <file dir="E:\Unity\EasyFileManager\UnityResManager\server\projects\UTNT\UTNT\bin\Release" name="UTNT.dll" />
+      </inputassembly>
+    </asmlist>
+  </input>
+  <output>
+    <file dir="${configdir}\Dotfuscated" />
+  </output>
+  <tempdir>
+    <file dir="E:\Unity\EasyFileManager\UnityResManager\server\projects\fuscator\temp" />
+  </tempdir>
+  <renaming>
+    <option>keepnamespace</option>
+    <excludelist>
+      <module name="UTNT.dll" assemblyname="UTNT" />
+    </excludelist>
+    <mapping>
+      <mapoutput overwrite="false">
+        <file dir="${configdir}\Dotfuscated" name="Map.xml" />
+      </mapoutput>
+    </mapping>
+  </renaming>
+  <controlflow level="high" />
+  <codeprotection />
+  <premark>
+    <option>disable</option>
+    <option>usepassphrase</option>
+    <assemblylist />
+    <encoding name="6bit-a" />
+  </premark>
+  <licensing>
+    <permutation name="" />
+    <product versionmask="revision" />
+    <nolicenseaction name="showactivation" />
+    <unlockingfeature name="" />
+  </licensing>
+</dotfuscator>

@@ -1,0 +1,23 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="HttpServer/src/Messages/Request.cs">
+    <Files>
+      <File FileName="HttpServer/src/Headers/Parsers/AuthorizationParser.cs" Line="6" Column="12" />
+      <File FileName="HttpServer/src/Headers/Parsers/ConnectionParser.cs" Line="12" Column="34" />
+      <File FileName="HttpServer/src/Headers/Parsers/ContentTypeParser.cs" Line="10" Column="13" />
+      <File FileName="HttpServer/src/Headers/Parsers/CookieParser.cs" Line="11" Column="13" />
+      <File FileName="HttpServer/src/Headers/Parsers/DateParser.cs" Line="11" Column="13" />
+      <File FileName="HttpServer/src/Headers/Parsers/IHeaderParser.cs" Line="9" Column="35" />
+      <File FileName="HttpServer/src/Headers/Parsers/NumericHeaderParser.cs" Line="10" Column="13" />
+      <File FileName="HttpServer/src/Headers/Parsers/ParserForAttribute.cs" Line="9" Column="13" />
+      <File FileName="HttpServer/src/Headers/Parsers/StringParser.cs" Line="10" Column="12" />
+      <File FileName="HttpServer/src/Headers/ConnectionHeader.cs" Line="45" Column="34" />
+      <File FileName="HttpServer/src/Messages/Request.cs" Line="127" Column="61" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

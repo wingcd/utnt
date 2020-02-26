@@ -1,0 +1,38 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="UTNT/UTNT/Terminal/Connect.cs">
+    <Files>
+      <File FileName="UTNT/WebSocket/Ext.cs" Line="532" Column="37" />
+      <File FileName="UTNT/UTNT/Terminal/ManWorker.cs" Line="63" Column="7" />
+      <File FileName="UTNT/UTNT/Terminal/PlayerPrefsWorker.cs" Line="262" Column="1" />
+      <File FileName="UTNT/UTNT/Terminal/UTerminal.cs" Line="201" Column="1" />
+      <File FileName="UTNT/UTNT/ArgsParser/ArgumentParser.cs" Line="52" Column="15" />
+      <File FileName="UTNT/UTNT/Utils/Zipper.cs" Line="188" Column="54" />
+      <File FileName="UTNT/UTNT/ArgsParser/Argument.cs" Line="1" Column="1" />
+      <File FileName="UTNT/UTNT/Terminal/Connect.cs" Line="26" Column="7" />
+      <File FileName="UTNT/UTNT/HttpServer/WWWCache.cs" Line="48" Column="53" />
+      <File FileName="UTNT/HttpServer/Server.cs" Line="452" Column="14" />
+      <File FileName="UTNT/UTNT/Terminal/HelpWorker.cs" Line="45" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="UTNT" expanded="True">
+            <Node name="UTNT_MAC" expanded="True" selected="True">
+              <Node name="UTNT" expanded="True">
+                <Node name="HttpServer" expanded="True" />
+                <Node name="Terminal" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="UTNT_WIN" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
