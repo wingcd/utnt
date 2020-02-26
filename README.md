@@ -110,14 +110,13 @@ b.  when you use this in editor,please enable your project run in
 3)  the function
 
 ```c#
- string Do(Connect conn, MessageModel request, string\[\] args)
+ string Do(Connect conn, MessageModel request, string args)
 ```
 > return the string will to show on terminal with default style,you can
 > return null,and terminal show nothing;
 >
 > or you can send to terminal by yourself with your style,if you use
-> Connect's interface,such as SendText and SendImage,more detail in
-> LogWorker code;
+> Connect's interface,such as SendText and SendImage,more detail in LogWorker code;
 
 4)  regist your worker into UTerminal:
 
